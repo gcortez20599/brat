@@ -1,5 +1,7 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sansation:wght@300;400;700&family=Scoop+One&display=swap');
 
+/* ========== Base Styles ========== */
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@ body {
   color: #000;
 }
 
-/* Navigation */
+/* ========== Navigation ========== */
 nav {
   background-color: #000;
   color: white;
@@ -29,7 +31,7 @@ nav .nav-right {
   gap: 1rem;
 }
 
-/* Hero Section */
+/* ========== Hero Section ========== */
 .home {
   background-color: #F7F4F3;
   text-align: center;
@@ -48,7 +50,7 @@ nav .nav-right {
   font-size: 2rem;
 }
 
-/* About Section */
+/* ========== About Section ========== */
 #about {
   background-color: #ffffff;
   padding: 50px 20px;
@@ -74,7 +76,7 @@ nav .nav-right {
   max-width: 500px;
 }
 
-/* Section Titles */
+/* ========== Section Titles ========== */
 .about h2,
 .albums h2,
 .shop h2 {
@@ -84,7 +86,7 @@ nav .nav-right {
   margin-top: 2rem;
 }
 
-/* Albums Section */
+/* ========== Albums Section ========== */
 .albums {
   background-color: #000;
   color: #fff;
@@ -113,7 +115,7 @@ nav .nav-right {
   margin-top: 0.5rem;
 }
 
-/* Shop Section */
+/* ========== Shop Section ========== */
 .shop {
   padding: 2rem;
   background-color: #ffffff;
@@ -145,7 +147,7 @@ nav .nav-right {
   margin: 0.5rem 0;
 }
 
-/* Buttons */
+/* ========== Buttons ========== */
 button {
   background-color: #8ace00;
   color: #fff;
@@ -162,13 +164,13 @@ button:hover {
   background-color: #405d0e;
 }
 
-/* Cart */
+/* ========== Cart ========== */
 .cart-display h3 {
   text-align: center;
   padding-top: 35px;
 }
 
-/* Footer */
+/* ========== Footer ========== */
 footer {
   background-color: #000;
   color: #fff;
@@ -178,10 +180,9 @@ footer {
   margin-top: 2rem;
 }
 
-/* Overall Section Styling */
+/* ========== Web Storage Section ========== */
 #web-storage {
   background-color: #F7F4F3;
-
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -262,6 +263,7 @@ footer {
   color: #8ace00;
 }
 
+/* ========== Carousel Section ========== */
 .carousel-section {
   text-align: center;
   padding: 40px;
@@ -280,4 +282,28 @@ footer {
   font-size: 18px;
   color: #333;
   margin-top: 10px;
+}
+
+/* ========== Weather Section ========== */
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 20rem;
+  background-color: #8ace00;
+  padding: 2rem;
+  color:#F7F4F3
+}
+
+#weather h2 {
+  font-family: 'Sansation', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#weather-content p {
+  font-size: 1.5rem;
+  color: #333;
 }
