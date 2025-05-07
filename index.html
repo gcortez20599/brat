@@ -3,72 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to the BRAT Era</title>
+  <title>Weather & Music App</title>
+  
+  <!-- Link to CSS file -->
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- Include JavaScript files -->
   <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Include Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&family=Scoop+One&display=swap" rel="stylesheet">
+
+  <!-- Include jQuery and jQuery UI for functionality -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+  <!-- Include Slick Carousel for carousel functionality -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
+  <!-- Navigation Bar -->
   <nav>
-    <div class="nav-left">Charli XCX</div>
+    <div class="nav-left">CHARLI XCX</div>
     <div class="nav-right">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#albums">Album</a>
+      <a href="#albums">Albums</a>
       <a href="#shop">Shop</a>
     </div>
   </nav>
 
-  <section class="hero" id="home">
-    <h1>Welcome to the BRAT Era</h1>
-    <p>STAY BRAT isn’t just an album. It’s an attitude.</p>
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <h1>Welcome to BRAT ALBUM</h1>
+    <p>By: Gisselle Cortez</p>
   </section>
 
-  <section class="about" id="about">
-    <img src="images/pic1.jpg" alt="Charli XCX" />
-    <p>
-      Charli XCX is a British pop artist known for pushing the boundaries of music.
-      Blending underground sounds with mainstream pop, Charli has become a true icon of modern pop.
-    </p>
-  </section>
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <img src="images/pic1.png" alt="Charli XCX" />
+      <p>
+        Charli XCX is a British pop artist known for pushing the boundaries of music. Blending underground sounds with mainstream pop, Charli has become a true icon of modern pop.
+      </p>
+    </div>
 
-  <section class="albums" id="albums">
-    <h2>Albums</h2>
-    <div class="album-grid">
-      <div class="album-card">
-        <img src="images/feeling.jpg" alt="Feeling Album" />
-        <p>Feeling</p>
-        <button onclick="playSample('Feeling')">Play Sample</button>
+    <!-- Accordion  -->
+    <div id="accordion">
+      <h3>About the Artist</h3>
+      <div>
+        <p>Charli XCX’s journey from the underground to mainstream pop is filled with risk-taking and pushing the boundaries of the genre.</p>
       </div>
-      <div class="album-card">
-        <img src="images/brat.jpg" alt="Brat Album" />
-        <p>BRAT</p>
-        <button onclick="playSample('BRAT')">Play Sample</button>
+      <h3>Albums</h3>
+      <div>
+        <p>Each of Charli’s albums explores new themes and sounds. "Fantasies" showcases her genre-blending style, while "BRAT" solidifies her role as an icon of modern music.</p>
       </div>
-      <div class="album-card">
-        <img src="images/pop2.jpg" alt="Pop2 Album" />
-        <p>Pop2</p>
-        <button onclick="playSample('Pop2')">Play Sample</button>
+      <h3>Upcoming Events</h3>
+      <div>
+        <p>Charli XCX is touring the world to promote her latest album. Keep an eye out for upcoming events in your area!</p>
       </div>
     </div>
   </section>
 
+  <!-- Shop Section -->
   <section class="shop" id="shop">
-    <h2>Merch</h2>
+    <h2>Merchandise</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="images/cd.jpg" alt="Vinyl" />
-        <p>Brat Vinyl — $40</p>
+        <img src="images/cd.png" alt="Brat Vinyl" />
+        <p><strong>Brat Vinyl</strong> — <span>$40</span></p>
         <button onclick="addToCart('Brat Vinyl', 40)">Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="images/hat.jpg" alt="Hat" />
-        <p>Charli Embroidered Hat — $35</p>
+        <img src="images/hat.png" alt="Charli Hat" />
+        <p><strong>Charli Embroidered Hat</strong> — <span>$35</span></p>
         <button onclick="addToCart('Charli Hat', 35)">Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="images/keychain.jpg" alt="Keychain" />
-        <p>Club Classics Keychain — $10</p>
+        <img src="images/keychain.png" alt="Keychain" />
+        <p><strong>Club Classics Keychain</strong> — <span>$10</span></p>
         <button onclick="addToCart('Keychain', 10)">Add to Cart</button>
       </div>
     </div>
@@ -77,8 +95,71 @@
     </div>
   </section>
 
+  <!-- Albums Section -->
+  <section class="albums" id="albums">
+    <h2>Albums</h2>
+    <div class="album-grid">
+      <div class="album-card">
+        <img src="images/feeling.png" alt="How I'm Feeling Now" />
+        <p>How I'm Feeling Now</p>
+        <audio controls>
+          <source src="audio/party.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="album-card">
+        <img src="images/brat.png" alt="BRAT Album" />
+        <p>BRAT</p>
+        <audio controls>
+          <source src="audio/365.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="album-card">
+        <img src="images/pop2.png" alt="Pop2 Album" />
+        <p>Pop2</p>
+        <audio controls>
+          <source src="audio/pop2.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="carousel-section">
+    <h3>Charli XCX Moments</h3>
+    <div class="album-carousel">
+      <div><img src="images/brat1.png" alt="Image 1" /></div>
+      <div><img src="images/brat2.png" alt="Image 2" /></div>
+      <div><img src="images/brat3.png" alt="Image 3" /></div>
+      <div><img src="images/brat4.png" alt="Image 4" /></div>
+    </div>
+  </section>
+
+  <!-- Web Storage Section -->
+  <section id="web-storage">
+    <h2 class="section-title">Save Your Favorite Album</h2>
+    <form id="favorite-album-form" class="form-container">
+      <label for="favorite-album" class="form-label">Enter your favorite album:</label>
+      <input type="text" id="favorite-album" name="favorite-album" class="form-input" placeholder="e.g. Feeling, BRAT, Pop2" />
+      <button type="submit" class="form-button">Save Album</button>
+    </form>
+    <h3 class="saved-album-title">Your Favorite Album:</h3>
+    <p id="saved-album" class="saved-album">No favorite album saved yet.</p>
+  </section>
+
+  <!-- Weather Section -->
+  <section id="weather">
+    <h2>Weather For Your Location</h2>
+    <div id="weather-content">
+      <p>Loading weather data...</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 BRAT by Charli XCX. Stay brat.</p>
+    <p>© 2025 BRAT By: Gisselle Cortez</p>
   </footer>
 </body>
 </html>
