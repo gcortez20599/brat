@@ -1,3 +1,4 @@
+use strict;
 $(document).ready(function () {
   // the  widget
   $("#accordion").accordion({
