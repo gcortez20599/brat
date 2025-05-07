@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to the BRAT Era</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">Charli XCX</div>
+    <div class="nav-right">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#albums">Album</a>
+      <a href="#shop">Shop</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to the BRAT Era</h1>
+    <p>STAY BRAT isn’t just an album. It’s an attitude.</p>
+  </section>
+
+  <section class="about" id="about">
+    <img src="images/pic1.jpg" alt="Charli XCX" />
+    <p>
+      Charli XCX is a British pop artist known for pushing the boundaries of music.
+      Blending underground sounds with mainstream pop, Charli has become a true icon of modern pop.
+    </p>
+  </section>
+
+  <section class="albums" id="albums">
+    <h2>Albums</h2>
+    <div class="album-grid">
+      <div class="album-card">
+        <img src="images/feeling.jpg" alt="Feeling Album" />
+        <p>Feeling</p>
+        <button onclick="playSample('Feeling')">Play Sample</button>
+      </div>
+      <div class="album-card">
+        <img src="images/brat.jpg" alt="Brat Album" />
+        <p>BRAT</p>
+        <button onclick="playSample('BRAT')">Play Sample</button>
+      </div>
+      <div class="album-card">
+        <img src="images/pop2.jpg" alt="Pop2 Album" />
+        <p>Pop2</p>
+        <button onclick="playSample('Pop2')">Play Sample</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <h2>Merch</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/cd.jpg" alt="Vinyl" />
+        <p>Brat Vinyl — $40</p>
+        <button onclick="addToCart('Brat Vinyl', 40)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/hat.jpg" alt="Hat" />
+        <p>Charli Embroidered Hat — $35</p>
+        <button onclick="addToCart('Charli Hat', 35)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/keychain.jpg" alt="Keychain" />
+        <p>Club Classics Keychain — $10</p>
+        <button onclick="addToCart('Keychain', 10)">Add to Cart</button>
+      </div>
+    </div>
+    <div class="cart-display">
+      <h3>Cart Items: <span id="cart-count">0</span></h3>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 BRAT by Charli XCX. Stay brat.</p>
+  </footer>
+</body>
+</html>

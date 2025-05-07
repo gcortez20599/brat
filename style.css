@@ -1,0 +1,169 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sansation:wght@300;400;700&family=Scoop+One&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Scoop One', sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  color: #fff;
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Sansation', sans-serif;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f7f4f3;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-family: 'Sansation', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-family: 'Sansation', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Titles */
+.albums h2,
+.shop h2 {
+  font-family: 'Sansation', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Albums */
+.album-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.album-card {
+  text-align: center;
+}
+
+.album-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.album-card p {
+  margin-top: 0.5rem;
+}
+
+/* Shop Section */
+.shop {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.product-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.product-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+button {
+  background-color: #8ace00;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: 'Scoop One', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #76b800;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Sansation', sans-serif;
+  margin-top: 2rem;
+}
